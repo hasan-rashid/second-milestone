@@ -2,8 +2,10 @@
 
 body{
     font-family: 'Source Sans Pro', sans-serif;
+   
 }
 
+/* Top page  */
 .football{
     display: flex;
     background-color: black;
@@ -31,7 +33,16 @@ body{
     cursor: grab;
 }
 
-/* hover and transfrom on link button   */
+.player img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+/*  top page button hover and transfrom on arrow    */
+
+
 .greatest-show:hover a{
     background-color: crimson;
     color: goldenrod;
@@ -43,51 +54,34 @@ body{
 
 
 
-.player img{
-    width: 100%;
-    height: 100%;
-    /* height: 100%; */
+/* Match schedule box */
+
+.vanue ul{
+    list-style:none ;
 }
 
-/* Information box  */
-
-    .vanue ul{
-        list-style:none ;
-    }
+ .vanue a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    padding:15px; 
+    border-radius: 3px;
+    cursor: grab;
     
-     .vanue a{
-        text-decoration: none;
-        color: black;
-        font-weight: 700;
-        padding:15px; 
-        border-radius: 3px;
-        cursor: grab;
-        
-    }
-        
-    .today-match{
-        padding: 15px;
-        font-size: 18px;
-        border: 15px solid black;
-        text-align: center;
-       
-       
-    } 
-
-    /* grid board */
-
-.highlight{
-    width: 309px;
-    height: 310px;
-    padding:1px;
-    border: 1px solid lightgray;
-    border-radius: 8px;
-    text-align: center;
 }
+    
+.today-match{
+    padding: 15px;
+    font-size: 18px;
+    border: 15px solid black;
+    text-align: center;
+   
+   
+} 
 
+/* grid area  */
 
-/* container  */
-.container{
+.win-win{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
@@ -99,30 +93,33 @@ body{
     grid-row: 1/4;
 }
 
-/* visiable unvisible button */
-.view-all{
-    text-decoration: none;
-    background-color: rgb(190, 72, 190);
-    color: white;
-    padding: 15px;
-    font-size: 18px;
-    border-radius: 5px;
+/* highlights */
+.france-german{
     position: relative;
-    left: 50%;
+    width: 250px;
+    height:150px ;
+    border: 1px solid lightgray;
+    padding: 23px; 
+    border-radius: 10px;
+    text-align: center;
 }
-/* footer area  */
+ .france-german img{
+    position: sticky;
+    right: 0;
+}
+
+/* Footer part  */
 footer{
     height: 200px;
     background-color: black;
     color: white;
     text-align: center;
     padding: 60px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 
 }
 .goal{
     margin-left: 30px;
 }
-    
-   
 
+/* Responsive for mobile  */
